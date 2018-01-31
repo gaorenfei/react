@@ -48,7 +48,7 @@ export class Contents extends Component {
               <Menu.Item key="1">
                 <Icon type="user"/>
                 <span>首页</span>
-                <Link to="/content/page1"></Link>
+                <Link to={{ pathname : '/content/page1' , state : { name : 'sunny' }}}></Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Icon type="video-camera" />
