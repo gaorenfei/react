@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import logo from '../logo.svg';
 import { Link } from 'react-router';
+// import PropTypes from 'prop-types';
 const { Header, Sider, Content } = Layout;
+
 
 export class Contents extends Component {
   constructor(props, context) {
@@ -10,7 +12,6 @@ export class Contents extends Component {
     // console.log(this.context.router)
     this.state = {
       collapsed: true,
-      aa:1
     };
   }
   toggle = () => {
@@ -30,9 +31,6 @@ export class Contents extends Component {
     //   return false
     // }
     return true
-  }
-  goTwoPage(){
-    console.log(666666666666666)
   }
   render() {
     return (
@@ -65,7 +63,7 @@ export class Contents extends Component {
                 onClick={this.toggle}
               />
             </Header>
-            <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 830 }}>
+            <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 835 }}>
                 {this.props.children}
             </Content>
           </Layout>
@@ -76,6 +74,6 @@ export class Contents extends Component {
 }
 
 //上下文，可以使用redux管理状态
-Contents.contextTypes = {
+Contents.propTypes = {
   // router: Object
 }

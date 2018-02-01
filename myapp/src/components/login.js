@@ -1,15 +1,4 @@
 import React, {Component} from 'react';
-// import { connect } from 'react-redux';
-// import axios from 'axios'
-
-// @connect(
-// 	state=>({
-// 		// showModal:state.common.showModal
-// 	}),
-// 	dispatch=>({
-// 		// comactions:bindActionCreators(comActions,dispatch)
-// 	})
-// )
 
 export class Login extends Component{
 	constructor(props){

@@ -1,10 +1,8 @@
 import React from 'react';
-import { Route, Redirect, IndexRedirect, Router } from 'react-router';
-
-
+import { Route, Redirect, IndexRedirect } from 'react-router';
 import {App} from '../App'
 import {Contents} from '../components/content'
-import {Page1} from '../components/page1'
+import Page1 from '../components/page1'
 import {Page2} from '../components/page2'
 
 
@@ -15,7 +13,7 @@ const requireAuth = (nextState, replace) => {
 }
 
 export default (
-    <Router path="/">
+    <Route path="/">
         <IndexRedirect to="/login" />
         <Route path="/login" component={App}/>
         <Route path="/content" component={Contents}>
@@ -24,5 +22,5 @@ export default (
             <Route path="/content/page2" component={Page2} onEnter={requireAuth} />
         </Route>
         <Redirect from='*' to='/'  />
-    </Router>
+    </Route>
 );
