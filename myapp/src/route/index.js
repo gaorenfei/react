@@ -1,8 +1,10 @@
 import React from 'react';
 import { Route, Redirect, IndexRedirect } from 'react-router';
+
+
 import {App} from '../App'
 import {Contents} from '../components/content'
-import Page1 from '../components/page1'
+import {Page1} from '../components/page1'
 import {Page2} from '../components/page2'
 
 
