@@ -25,12 +25,17 @@ export class Page1 extends Component {
         //获取路由传递的参数
         // console.log(this.props.location.state.name)
     }
+    editState(){
+        let {onIncrement} = this.props
+        onIncrement.editTest('456789');
+    }
     render() {
+        let {test} = this.props
         return (
             <div>
                 首页
-                <Button type="dashed">修改</Button>
-                {this.state.test}
+                <Button type="dashed" onClick={this.editState.bind(this)}>修改</Button>
+                {test}
             </div>
         )
     }
