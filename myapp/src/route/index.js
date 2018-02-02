@@ -7,7 +7,7 @@ import  Contents from '../components/content'
 import  Page1 from '../components/page1'
 import  Page2 from '../components/page2'
 
-console.log(App)
+
 // 可以在这里写一些在路由即将被改变时触发的函数
 // 可以用参数replace改变接下来的路由地址
 const requireAuth = (nextState, replace) => {
