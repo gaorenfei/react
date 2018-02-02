@@ -4,7 +4,7 @@ import { Button } from 'antd';
 import {Login} from './components/login'
 // import axios from 'axios';
 
-export class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +16,7 @@ export class App extends Component {
     // })
   }
   goTset(){
-    this.props.router.push({ pathname : '/content' })
+    this.props.router.push({ pathname : 'content' })
     // window.location.hash='#/content';
   }
   render() {
@@ -31,4 +31,4 @@ export class App extends Component {
     );
   }
 }
-
+export default App

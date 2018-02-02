@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 const { Header, Sider, Content } = Layout;
 
 
-export class Contents extends Component {
+class Contents extends Component {
   constructor(props, context) {
     super(props, context);
     // console.log(this.context.router)
@@ -77,3 +77,5 @@ export class Contents extends Component {
 Contents.propTypes = {
   // router: Object
 }
+
+export default Contents

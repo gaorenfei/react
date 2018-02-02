@@ -60,6 +60,7 @@ module.exports = {
     // containing code from all our entry points, and the Webpack runtime.
     filename: 'static/js/bundle.js',
     // There are also additional JS chunk files if you use code splitting.
+    // static/js/[name].chunk.js [name].[chunkhash:5].chunk.js
     chunkFilename: 'static/js/[name].chunk.js',
     // This is the URL that app is served from. We use "/" in development.
     publicPath: publicPath,

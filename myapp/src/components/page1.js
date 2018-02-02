@@ -14,7 +14,7 @@ import * as comActions from '../action/index';
 	})
 )
 
-export class Page1 extends Component {
+class Page1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -41,6 +41,7 @@ export class Page1 extends Component {
     }
 }
 
+export default Page1
 //推荐写法
 // const mapStateToProps = (state) => {
 //     console.log(state)
