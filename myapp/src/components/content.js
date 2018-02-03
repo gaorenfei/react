@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import logo from '../logo.svg';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 const { Header, Sider, Content } = Layout;
 
@@ -79,3 +79,4 @@ Contents.propTypes = {
 }
 
 export default Contents
+

@@ -16,8 +16,9 @@ class App extends Component {
     // })
   }
   goTset(){
-    this.props.router.push({ pathname : 'content' })
+    // this.props.router.push({ pathname : 'content' })
     // window.location.hash='#/content';
+    this.props.history.push('content/page1')
   }
   render() {
     return (
