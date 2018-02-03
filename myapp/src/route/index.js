@@ -52,19 +52,17 @@ import Page2 from '../components/page2'
 import React from 'react'
 import NoMatch from '../components/common'
 import {
-    // HashRouter,
     Route,
     // Link,
     Switch,
     Router,
-    // BrowserRouter
-    Redirect,
+    BrowserRouter
 } from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from '../store';
 // import { syncHistoryWithStore } from 'react-router-redux'
-import createHistory from 'history/createBrowserHistory'
-const history = createHistory()
+// import createHistory from 'history/createBrowserHistory'
+// const history = createHistory()
 
 const Content = () => {
     return(
@@ -77,13 +75,13 @@ const Content = () => {
 const RouterConfig =()=>{
     return(
         <Provider store={store}>
-            <Router history={history}>
+            <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={App} />
                     <Route path="/content" component={Content} />
                     <Route component={NoMatch}></Route>
                 </Switch>
-            </Router>
+            </BrowserRouter>
         </Provider>
     )
 }
