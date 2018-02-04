@@ -10,7 +10,7 @@ import * as comActions from '../action/index';
 		test: state.common.test
 	}),
 	dispatch=>({
-		onIncrement:bindActionCreators(comActions,dispatch)
+        onIncrement:bindActionCreators(comActions,dispatch)  //隐式调用dispatch
 	})
 )
 
@@ -27,7 +27,7 @@ class Page1 extends Component {
     }
     editState(){
         let {onIncrement} = this.props
-        onIncrement.editTest('456789');
+        onIncrement.editTest(true);
     }
     render() {
         let {test} = this.props
