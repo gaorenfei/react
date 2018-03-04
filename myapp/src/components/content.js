@@ -12,7 +12,7 @@ class Contents extends Component {
     // console.log(this.context.router)
     this.state = {
       collapsed: true,
-      aa:''
+      aa:'123233231231'
     };
   }
   toggle = () => {
