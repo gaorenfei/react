@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
+
+import _ from 'lodash';
 class Page2 extends Component{
     constructor(props){
         super(props);
@@ -7,11 +9,24 @@ class Page2 extends Component{
            
         }
     }
+    componentDidMount(){
+        //按长度分割
+        console.log(_.chunk(['a', 'b', 'c', 'd'],3))
+        //去除判断条件为false的
+        console.log(_.compact([0, 1, false, 2, '', 3, 7, 7.5, 'gggg', true, false,NaN, undefined]))
+        //返回第一个数组与后一个数组不相同的值
+        console.log(_.difference([2, 5, 6, 4,9], [4, 2,7,8,9]))
+        //得到从结尾处开始删除后的数组默认1
+        console.log(_.dropRight([1, 2, 3,4,5,6,7,8,9], 5))
+        //默认从头开始删除默认1
+        console.log(_.drop([1, 2, 3],1))
+    }
     render(){
         return(
             <div>
                 <Button type="dashed">第二页</Button>
-                <Provice></Provice>
+                {/* <Provice></Provice> */}
+                <div></div>
             </div>
         )
     }
@@ -58,6 +73,7 @@ class Provice extends Component{
             ]
         }
     }
+    
     render(){
         return(
             <div>
